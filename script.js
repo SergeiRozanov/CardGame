@@ -56,3 +56,5 @@ cardsGameBtn.addEventListener('click', (e) => {
         item.classList.remove('defaultCard');
     });
 });
+
+123
