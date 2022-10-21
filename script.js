@@ -57,4 +57,3 @@ cardsGameBtn.addEventListener('click', (e) => {
     });
 });
 
-123
