@@ -1,0 +1,84 @@
+.cards__start {
+    border-radius: 12px;
+    width: 480px;
+    height: 459px;
+    background: #c2f5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+  }
+.cards__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cards__form-title {
+    padding-bottom: 48px;
+    width: 208px;
+    height: 96px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #004980;
+  }
+  .cards__form-levels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    padding-bottom: 67px;
+  }
+  .cards__form-levelHead {
+    width: 98px;
+    height: 98px;
+    background: #ffffff;
+    border-radius: 12px;
+    width: 97px;
+    height: 98px;
+    font-family: "StratosSkyeng";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #0080c1;
+  }
+  .cards__form-levelHead:hover {
+    cursor: pointer;
+  }
+  .cards__form-level:checked + .cards__form-levelHead {
+    border: 1px solid #0080c1;
+  }
+  .cards__form-level {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .btn {
+    width: 246px;
+    height: 50px;
+    background: #7ac100;
+    border-radius: 12px;
+    border: 0px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #ffffff;
+    justify-content: center;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
