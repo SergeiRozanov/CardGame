@@ -1,5 +1,6 @@
-@import 'form';
-@import 'game';
+@import '_form';
+@import '_game';
+@import 'cards-bg';
 
 @font-face {
     font-family: 'StratosSkyeng';
@@ -28,8 +29,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-   
 }
 
 .btn {
@@ -49,10 +48,14 @@ body {
     justify-content: center;
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
 }
 
 .hiden {
     display: none;
+}
+
+.defaultCard{
+    background: url('./img/card-bg.jpg');
 }

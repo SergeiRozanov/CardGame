@@ -1,4 +1,4 @@
-const cards = document.querySelector('.cards')
+const cards = document.querySelector('.cards');
 const cardsForm = document.querySelector('.cards__start');
 const cardsFormBtn = document.querySelector('.cards__form-btn');
 const cardsFormLevel = document.querySelectorAll('.cards__form-level');
@@ -56,4 +56,3 @@ cardsGameBtn.addEventListener('click', (e) => {
         item.classList.remove('defaultCard');
     });
 });
-
