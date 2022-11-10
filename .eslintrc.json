@@ -10,7 +10,7 @@
 
     "rules": {
         "prettier/prettier": "error",
-        "camelcase": ["true"],
+        "@typescript-eslint/camelcase": ["off"],   
         "eqeqeq": ["error", "always"]
     }
 }
