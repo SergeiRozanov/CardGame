@@ -16,6 +16,7 @@ function startTimer() {
     }
 }
 
+// eslint-disable-next-line no-unused-vars
 function pauseTimer() {
     if (!difference) {
         // if timer never started, don't allow pause button to do anything
@@ -35,6 +36,7 @@ function pauseTimer() {
     }
 }
 
+// eslint-disable-next-line no-unused-vars
 function resetTimer() {
     clearInterval(tInterval);
     savedTime = 0;
@@ -56,9 +58,11 @@ function getShowTime() {
     let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((difference % (1000 * 60)) / 1000);
     let milliseconds = Math.floor((difference % (1000 * 60)) / 100);
+    // eslint-disable-next-line no-unused-vars
     hours = hours < 10 ? '0' + hours : hours;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
+    // eslint-disable-next-line no-unused-vars
     milliseconds =
         milliseconds < 100
             ? milliseconds < 10
