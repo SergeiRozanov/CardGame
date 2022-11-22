@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
@@ -15,7 +16,6 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                // eslint-disable-next-line no-undef
                 use: [MinCssExtractPlugin.loader, 'css-loader'],
             },
             { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset/resourse' },
