@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const isProduction = process.env.NODE_ENV === 'production';
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimiser-plugin');
 
 module.exports = {
     entry: './src/script.js',
@@ -15,8 +17,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                // eslint-disable-next-line no-undef
-                use: [MinCssExtractPlugin.loader, 'css-loader'],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset/resourse' },
             { test: /\.(woff|woff2|eot|ttf|otf)$/i, type: 'asset/resourse' },
@@ -29,5 +30,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
         }),
+        new MiniCssExtractPlugin(),
     ],
+    optimization: {
+        minimizer: ['...', new CssMinimizerPlugin()],
+    },
+    devtool: isProduction ? 'hidden-source-map' : 'source-map',
 };
